@@ -109,7 +109,7 @@ try {
   //yedekh liyo
   loader.classList.remove('loader');
   loader.classList.add('hide')
-
+  
 const response = await fetch(url, options);
 const result = await response.text();
 const resultJson= JSON.parse(result)
@@ -122,10 +122,13 @@ const formattedValue = resultJson.value.replace(/\\n/g, '\n');
 // console.log(formattedValue);
 
 // Update the content of the "premium" div with the API result
-document.getElementById("premium-div").textContent = formattedValue;
+document.getElementsByClassName(".result").textContent = formattedValue;
 
 
-console.log(result);
+document.querySelector(".result").textContent = formattedValue;
+const resultDiv = document.querySelector(".result");
+resultDiv.style.visibility = "visible"
+
 // console.log('hi from fetch');
 } catch (error) {
 console.error(error);
@@ -148,4 +151,67 @@ select(file);
 } else {
 console.log("Please select a JPG or PNG image file.");
 }
+});
+
+// download button
+// Function to download the text as a .txt file
+function downloadTextAsFile() {
+  const textToDownload = document.querySelector('.result').textContent;
+  const filename = 'download.txt';
+
+  const element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textToDownload));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+// Add click event listener to the download button
+const downloadButton = document.querySelector('.download');
+downloadButton.addEventListener('click', downloadTextAsFile);
+// copy button
+// Function to copy the text to the clipboard
+function copyTextToClipboard() {
+  const textToCopy = document.querySelector('.result').textContent;
+
+  // Create a textarea element to hold the text temporarily
+  const textarea = document.createElement('textarea');
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+
+  // Select the text in the textarea
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the selected text to the clipboard
+  document.execCommand('copy');
+
+  // Remove the textarea element from the DOM
+  document.body.removeChild(textarea);
+
+  // Provide visual feedback to the user
+  const copyButton = document.querySelector('.copy');
+  copyButton.textContent = 'Copied!';
+  setTimeout(() => {
+    copyButton.textContent = 'Copy Text';
+  }, 2000);
+}
+
+// Add click event listener to the copy button
+const copyButton = document.querySelector('.copy');
+copyButton.addEventListener('click', copyTextToClipboard);
+// premium
+const prem = document.getElementById('ad');
+
+const targetElement = document.getElementsByClassName('.container-all');
+
+console.log(targetElement)
+prem.addEventListener('click', () => {
+
+  targetElement.scrollIntoView({ behavior: 'smooth' });
 });

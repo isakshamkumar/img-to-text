@@ -23,11 +23,11 @@
   }
   .ad1{
     display: flex;
-    width: 70vw;
+    width: 100%;
     background-color: rgb(255, 187, 187);
     color: white;
     height: 15vh;
-    margin: 3%;
+    margin: 3% 0% 3% 0%;
     font-size: 30px;
     border-radius: 20px;
     justify-content: center;
@@ -80,7 +80,7 @@ form {
     border-radius: 10px;
     
     padding: 12%;
-    box-shadow: rgba(17, 12, 46, 0.25) 0px 48px 80px 0px;;
+    box-shadow: rgba(17, 12, 46, 0.25) 0px 48px 80px 0px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -91,9 +91,9 @@ form {
 .input-file-container {
     display: flex;
     position: relative;
-    width: 6vw;
+    width: auto;
     border-radius: 20px;
-    
+
   } 
   .js .input-file-trigger {
     display: block;
@@ -151,25 +151,11 @@ form {
 #premium-div{
   text-align: center;
   padding: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
-@media screen and (max-width: 800px){
-  form{
-    width: 38vw;
-  }
-  .input-file-container {
-    display: flex;
-    position: relative;
-    width: 38vw;
-    border-radius: 20px;
-    
-  } 
-    .input{
-        align-items: center;
-        flex-flow: column;
-    }
-    .under{
-        width: 57vw;
-    }
+#premium-div:hover{
+  transform: scale(1.1);
 }
 
 .container-all>header {
@@ -225,6 +211,31 @@ form {
       /* background-color: rgb(85, 86, 90); */
       box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
     }
+    .main-ben{
+      display: flex;
+      flex-flow: column;
+      width: auto;
+      
+    }
+    .internal{
+      background-color: rgb(59 130 246 / 0.5);
+      margin: 1%;
+      border-radius: 20px;
+      width: auto;
+    }
+    .benifits{
+      padding: 2rem 10rem 2rem 10rem;
+      width: auto;
+    }
+    .y-card{
+      padding: 1rem 10rem 1rem 10rem;
+      width: auto;
+    }
+    .price{
+      padding: 2rem 10rem 2rem 10rem;
+      width: auto;
+    }
+
     
     .cards {
       width: 100%;
@@ -569,6 +580,69 @@ form {
     color: #24262b;
     background-color: #ffffff;
   }
+  .result{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: rgba(80, 68, 146, 0.153) 0px 48px 80px 0px;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 5%;
+    text-align: center;
+    visibility: hidden;
+  }
+
+  .buttons{
+
+    display: flex;
+    box-shadow: rgba(80, 68, 146, 0.153) 0px 48px 80px 0px;
+
+  }
+  .download{
+    border-radius: 10px;
+    padding: 1%;
+    width: 45vw;
+    background-color: rgb(182, 210, 255);
+    margin: 2%;
+    transition: 0.5s ease-out;
+
+  }
+  .copy{
+    border-radius: 10px;
+    padding: 1%;
+    width: 45vw;
+    margin: 2%;
+    background-color: rgb(182, 210, 255);
+    transition: 0.5s ease-out;
+  }
+  .copy:hover{
+    transform: scale(1.05);
+  }
+  .download:hover{
+    transform: scale(1.05);
+  }
+
+
+  @media screen and (max-width: 800px){
+    form{
+      width: 38vw;
+    }
+    .input-file-container {
+      display: flex;
+      position: relative;
+      width: auto;
+      border-radius: 20px;
+      
+    } 
+      .input{
+          align-items: center;
+          flex-flow: column;
+      }
+      .under{
+          width: 84vw;
+      }
+  }
   @media screen and (max-width: 768px) {
     .faq-container {
       max-width: 100%;
@@ -685,4 +759,8 @@ form {
      /* .cards .card.active {
       transform: scale(1);
     }  */
-}
+  }
+
+
+
+
