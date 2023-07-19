@@ -215,3 +215,14 @@ prem.addEventListener('click', () => {
 
   targetElement.scrollIntoView({ behavior: 'smooth' });
 });
+
+//search the text on the web 
+function searchOnGoogle() {
+  var resultText = document.querySelector('.result').textContent;
+  if (resultText) {
+    var searchQuery = resultText.replace(/\n/g, ' ').trim();
+    var searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(searchQuery);
+    window.open(searchUrl, '_blank');
+  }
+}
+
