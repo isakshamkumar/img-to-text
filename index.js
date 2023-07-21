@@ -4,9 +4,9 @@ const professional = document.getElementById("professional");
 const basic = document.getElementById("basic");
 
 checkbox.addEventListener("click", () => {
-  basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99";
+  basic.textContent = basic.textContent === "$39.99" ? "$4.99 " : "$39.99";
   professional.textContent =
-    professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
+    professional.textContent === "$29.99" ? "$2.99" : "$29.99"
 //   master.textContent = master.textContent === "$399.99" ? "$39.99" : "$399.99";
 });
 const toggles = Array.from(document.querySelectorAll(".faq-toggle"));
@@ -88,9 +88,12 @@ reader.readAsDataURL(file);
 
 // result
 async function select(file) {
+  document.querySelector(".result").textContent = '';
+
   const loader= document.getElementById('loader');
   loader.classList.remove('hide');
   loader.classList.add('loader');
+  
 const url = 'https://pen-to-print-handwriting-ocr.p.rapidapi.com/recognize/';
 const data = new FormData();
 data.append('srcImg', file, file.name);
@@ -106,23 +109,37 @@ body: data
 };
 
 try {
-  //yedekh liyo
-  loader.classList.remove('loader');
-  loader.classList.add('hide')
+  const targetElement= document.getElementById('result')
+  targetElement.scrollIntoView({ behavior: 'smooth' });
+ 
   
 const response = await fetch(url, options);
 const result = await response.text();
 const resultJson= JSON.parse(result)
-// console.log(resultJson)
-// console.log(result)
+ //yedekh liyo
+  loader.classList.remove('loader');
+  loader.classList.add('hide')
+
+console.log(resultJson)
+console.log(result)
 
 
 //yedekh liyo
-const formattedValue = resultJson.value.replace(/\\n/g, '\n');
-// console.log(formattedValue);
+// const formattedMessage = message.replace(/\n/g, "<br>");
+const formattedValue = resultJson.value.replace(/\n/g, "\n");
+// let formattedMessage = '';
+// for (let i = 0; i < resultJson.value.length; i++) {
+//   if (resultJson.value[i] === '\n') {
+//     formattedMessage += '<br>';
+//   } else {
+//     formattedMessage += resultJson.value[i];
+//   }
+// }
+
+// console.log(formattedMessage);
 
 // Update the content of the "premium" div with the API result
-document.getElementsByClassName(".result").textContent = formattedValue;
+// document.getElementsByClassName(".result").textContent = formattedValue;
 
 
 document.querySelector(".result").textContent = formattedValue;
@@ -136,9 +153,9 @@ console.error(error);
 }
 
 fileInput.addEventListener("change", function (event) {
-  var imagePreview = document.getElementById('image-preview');
-  //yedekh liyo
-  imagePreview.src ='';
+  // var imagePreview = document.getElementById('image-preview');
+  // //yedekh liyo
+  // imagePreview.src ='';
 
 const selectedFiles = event.target.files;
 
@@ -205,16 +222,13 @@ function copyTextToClipboard() {
 // Add click event listener to the copy button
 const copyButton = document.querySelector('.copy');
 copyButton.addEventListener('click', copyTextToClipboard);
-// premium
-const prem = document.getElementById('ad');
 
-const targetElement = document.getElementsByClassName('.container-all');
-
-console.log(targetElement)
-prem.addEventListener('click', () => {
-
+//updated prem
+const prem= document.getElementById('premium-div');
+const targetElement = document.getElementById('pricing-container');
+prem.addEventListener('click',()=>{
   targetElement.scrollIntoView({ behavior: 'smooth' });
-});
+})
 
 //search the text on the web 
 function searchOnGoogle() {

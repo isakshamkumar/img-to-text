@@ -26,7 +26,7 @@
     width: 100%;
     background-color: rgb(255, 187, 187);
     color: white;
-    height: 15vh;
+    height: 30vh;
     margin: 3% 0% 3% 0%;
     font-size: 30px;
     border-radius: 20px;
@@ -63,6 +63,14 @@
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: scroll;
+  position: relative;
+}
+.preview >h2{
+  position: absolute;
+  z-index: 500;
+  color: black;
+  top: -2rem;
+  left: 37%;
 }
 .premium{
     
@@ -155,9 +163,19 @@ form {
   cursor: pointer;
   height: auto;
   width: auto;
+  position: relative;
+}
+#premium-div >h2{
+ position: absolute;
+ z-index: 500;
+ top: -2rem;
+ left: 15rem;
 }
 #premium-div:hover{
   transform: scale(1.1);
+}
+#premium-div:hover> h2{
+  transform: scale(1);
 }
 
 .container-all>header {
@@ -348,9 +366,15 @@ form {
   }
   .hide{
     display: none;
+    position: absolute;
+    top: 210rem;
   }
   .loader {
     display: block;
+    position: absolute;
+    top: 100rem;
+    z-index: 99999;
+    
     border: 4px solid #f3f3f3;
     border-top: 4px solid #3498db;
     border-radius: 50%;
@@ -373,19 +397,20 @@ form {
     font-size: 2.4rem;
   }
   .feature-container{
-    display: grid;
-    flex-direction: column;
+    /* display: grid; */
     margin: 1rem;
     padding: 2rem;
-      display: flex;
+    display: flex;
+    flex-direction: column;
       height: auto;
       box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
   }
 .features{
+  display: flex;
+    flex-direction: row;
   margin: 1rem;
   padding: 2rem;
-    display: grid;
-    height: auto;
+   height: 20rem;
     /* background-color: red; */
     gap: 2rem;
   
