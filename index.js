@@ -102,7 +102,7 @@ data.append('Session', 'string');
 const options = {
 method: 'POST',
 headers: {
-  'X-RapidAPI-Key': '546c232bf9msh68a97b48966d016p1cf9e2jsnbb61b7bea4f2',
+  'X-RapidAPI-Key': '92e1cf2749msh521dfe371e4fc6fp16d24djsnc59d1cba6a7d',
   'X-RapidAPI-Host': 'pen-to-print-handwriting-ocr.p.rapidapi.com'
 },
 body: data
