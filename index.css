@@ -410,7 +410,7 @@ form {
     flex-direction: row;
   margin: 1rem;
   padding: 2rem;
-   height: 20rem;
+   height: auto;
     /* background-color: red; */
     gap: 2rem;
   
