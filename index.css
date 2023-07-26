@@ -367,12 +367,12 @@ form {
   .hide{
     display: none;
     position: absolute;
-    top: 210rem;
+
   }
   .loader {
+
     display: block;
     position: absolute;
-    top: 100rem;
     z-index: 99999;
     
     border: 4px solid #f3f3f3;
