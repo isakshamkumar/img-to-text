@@ -4,149 +4,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3415677292449696"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="index.css">
-
-  <title>IMAGE TO TEXT</title>
+  <title>Image to Text Converter - Extract Text from Images</title>
+  <meta name="description"
+    content="Convert images to text easily using our image to text converter. Extract text from images and scanned documents. Try it now for free!">
+  <meta name="keywords"
+    content="image to text converter, extract text from images, image text recognition, OCR, image conversion, scanned document to text">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="audience" content="all">
+  <meta name="googlebot" content="index, follow">
+  <!-- Structured Data - Adding schema.org Markup -->
+  <!-- <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Image to Text Converter",
+    "url": "https://www.imagetotextconverter.com",
+    "logo": "https://www.imagetotextconverter.com/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/ImageToTextConverter",
+      "https://twitter.com/ImageToTextConverter",
+      "https://www.instagram.com/ImageToTextConverter"
+    ]
+  }
+  </script> -->
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Image to Text Converter - Extract Text from Images">
+  <meta property="og:description"
+    content="Convert images to text easily using our image to text converter. Extract text from images and scanned documents. Try it now for free!">
+  <meta property="og:url" content="https://www.imagetotextconverter.com">
+  <meta property="og:image" content="https://www.imagetotextconverter.com/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image to Text Converter - Extract Text from Images">
+  <meta name="twitter:description"
+    content="Convert images to text easily using our image to text converter. Extract text from images and scanned documents. Try it now for free!">
+  <meta name="twitter:image" content="https://www.imagetotextconverter.com/images/twitter-image.jpg">
 </head>
 
 <body>
-  <div>
+  <header>
     <nav class="bg-white-200" id="naving">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-16 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <!-- Mobile menu button-->
-                    <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex flex-shrink-0 items-center">
-                        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-blue-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                            <a href="#" class="text-gray-500 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-                            <a href="#" class="text-gray-500 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-                            <a href="#" class="text-gray-500 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                        <span class="sr-only">View notifications</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                        </svg>
-                    </button>
-                    <!-- Profile dropdown -->
-                    <div class="relative ml-3">
-                        <div>
-                            <button type="button" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                <span class="sr-only">Open user menu</span>
-                                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                            </button>
-                        </div>
-                        <!-- Dropdown menu, show/hide based on menu state -->
-                        <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" id="user-menu">
-                            <!-- Active: "bg-gray-100", Not Active: "" -->
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-                        </div>
-                        
-                    </div>
-                </div>
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company" />
             </div>
-        </div>
-        
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-2">
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+                <a href="#" class="bg-blue-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">Home</a>
+                <a href="#"
+                  class="text-gray-500 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
+                <a href="#"
+                  class="text-gray-500 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+                <a href="#"
+                  class="text-gray-500 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+              </div>
             </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button"
+              class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+              </svg>
+            </button>
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button type="button"
+                  class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <span class="sr-only">Open user menu</span>
+                  <img class="h-8 w-8 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="" />
+                </button>
+              </div>
+              <!-- Dropdown menu, show/hide based on menu state -->
+              <div
+                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" id="user-menu">
+                <!-- Active: "bg-gray-100", Not Active: "" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                  id="user-menu-item-0">Your Profile</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                  id="user-menu-item-1">Settings</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                  id="user-menu-item-2">Sign out</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+            aria-current="page">Dashboard</a>
+          <a href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+          <a href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+          <a href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+        </div>
+      </div>
     </nav>
-</div>
-    <!-- navbar -->
-    <!-- AD 1 -->
-<!-- <center>
-<div class="ad1" id="ad">
-<H1>AD HERE</H1>
-</div>
-</center> -->
-    <!-- AD1 -->
-    <!-- grid for drop , preview , and premium -->
-<div class="input">
-    <div class="under drag">
+
+  </header>
+  <!-- navbar -->
+  <!-- AD 1 -->
+
+  <!-- AD1 -->
+  <!-- grid for drop , preview , and premium -->
+  <main>
+    <section class="input">
+      <div class="under drag">
+
         <form action="#">
-            <h1 class="inputText">Upload A File</h1>
-            <div class="input-file-container">  
-              <input class="input-file" id="my-file" type="file">
-              <label tabindex="0" for="my-file" class="input-file-trigger"><img src="icons8-plus.svg" alt="" class="uploadImg"></label>
-            </div>
-            <p class="file-return"></p>
-          </form>
-    </div>
-    <div class="under preview">
-      <h2>Image Preview</h2>
+          <h1 class="inputText">Upload A File</h1>
+          <div class="input-file-container">
+            <input class="input-file" id="my-file" type="file" />
+            <label tabindex="0" for="my-file" class="input-file-trigger"><img src="icons8-plus.svg" alt="image to text"
+                class="uploadImg" /></label>
+          </div>
+          <p class="file-return"></p>
+        </form>
+      </div>
+      <div class="under preview">
+        <!-- <h2>Image Preview</h2> -->
         <!-- <img id="image-preview" src="" alt="Image Preview"> -->
-        <img id="image-preview" src="" alt="Image Preview">
+        <img id="image-preview" src="" alt="image to text converter" />
+      </div>
+
+      <div class="under premium icon"  id="premium-div">
+
+        <div class="main-ben">
+        <img src="premium.svg" alt="">
+      </div>
     </div>
-
-
-    <div class="under premium icon"  id="premium-div">
-
-      <div class="main-ben">
-      <img src="premium.svg" alt="">
-    </div>
-  </div>
-
-  </div>
+    </section>
     <!-- grid for drop , preview , and premium -->
     <!-- AD 1 -->
+
     <!-- <center>
       <div class="ad1">
       <H1>AD HERE</H1>
       </div>
       </center> -->
-          <!-- AD1 -->
+    <!-- AD1 -->
 
-  <center><div class="result" id="result">
+    <!-- AD1 -->
 
-  </div></center>
-  <center><div class="loader-container">
+    <!-- <center> -->
+    <section class="result" id="result"></section>
+    <!-- </center> -->
+    <!-- <center> -->
+    <div class="loader-container">
+      <div class="backdrop"></div>
+      <div id="loader" class="hide"></div>
+    </div>
+    <!-- </center> -->
+    <div class="buttons">
+      <button id="downloadButton" class="download">
+        Download as .txt file
+      </button>
 
-    <div class="backdrop"></div>
-    <div id="loader" class="hide"></div>
-  </div></center>
-  <div class="buttons">
+      <button class="copy">Copy Text</button>
 
-    <button id="downloadButton" class="download">
-      Download as .txt file
-    </button>
+      <button onclick="searchOnGoogle()" class="searchweb">
+        Search on the web
+      </button>
+    </div>
 
+
+    <!-- <center>
+=======
     <button class="copy">
       Copy Text
     </button>
@@ -158,87 +232,225 @@
 
   </div>
 
-  <!-- <center>
+  <center>
+
     <div class="ad1" id="ad">
     <H1>AD HERE</H1>
     </div>
     </center> -->
 
-   <div class="feature-container">
-
-   <h1 class="heading">Features</h1>
-    <div class="features">
-      <div class="feature-box">Lorem ipsum dolor sit amet consec"tetur adipisicing elit. Quibusdam, nisi?</div>
-      <div class="feature-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, debitis?</div>
-      <div class="feature-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, debitis?</div>
+    <section>
+      <div class="main1">
+      
+      <!-- these para should be all left align ..means right par niche vali image and left me saare ye para -->
+      <div class="para1">
+      <p class="left-align">
+        Say goodbye to the tedious manual typing and say hello to a smarter way of extracting text from images. In
+        today's fast-paced technological world, wasting time converting jpg or png files to text is simply inefficient
+        and impractical. That's where our advanced image-to-text converter comes into play, revolutionizing the way you
+        handle text extraction. With lightning-fast processing and seamless usability, our tool swiftly converts images
+        into text, saving you precious time and effort.
+      </p>
     </div>
-  </div>
-
-
-  <div class="container-all" id="pricing-container">
-    <header>
-      <h1>Our Pricing</h1>
-      <div class="toggle">
-        <label>Annually </label>
-        <div class="toggle-btn">
-          <input type="checkbox" class="checkbox" id="checkbox" />
-          <label class="sub" id="sub" for="checkbox">
-            <div class="circle"></div>
-          </label>
-        </div>
-        <label> Monthly</label>
-      </div>
-    </header>
-    <div class="cards">
-      <div class="card shadow">
-        <ul>
-          <li class="pack">Basic</li>
-          <li id="basic" class="price bottom-bar">&dollar;39.99</li>
-          <li class="bottom-bar">500 GB Storage</li>
-          <li class="bottom-bar">2 Users Allowed</li>
-          <li class="bottom-bar">Send up to 3 GB</li>
-          <li><button class="btn">Learn More</button></li>
-        </ul>
-      </div>
-      <div class="card shadow">
-        <ul>
-          <li class="pack">Professional</li>
-          <li id="professional" class="price bottom-bar">&dollar;29.99</li>
-          <li class="bottom-bar">1 TB Storage</li>
-          <li class="bottom-bar">5 Users Allowed</li>
-          <li class="bottom-bar">Send up to 10 GB</li>
-          <li><button class="btn ">Learn More</button></li>
-        </ul>
-      </div>
+      <div class="para-img1">
+      <img src="https://www.reneelab.com/wp-content/uploads/sites/2/2021/05/text-from-png.png" alt="">
     </div>
-  </div>
-  <div class="faq">
-    <h1 class="h1">Frequently Asked Questions</h1>
-    <div class="faq-container">
-      <div class="faq-box">
-        <h3 class="faq-title">How can I extract text from an image for free?</h3>
-        <p class="faq-text">To extract the text from an image,
-          
-         -> Go to imagetotext.info (Free).
-         -> Upload or drag and drop your image.
-         -> Click the Submit button.
-         -> Copy the text or save the text file on your computer.</p>
-         <button class="faq-toggle">
-           <i class="bx bx-chevron-down"></i>
-           <i class="bx bx-x-circle"></i>
-          </button>
+    </div>
+    <div class="main2">
+      <div class="para2">
+      <p class="left-align">
+        Our free online OCR tool employs cutting-edge <a style="color: green;"
+          href="https://www.explainthatstuff.com/how-ocr-works.html" target="_blank">optical character recognition (OCR)
+          technology</a> , ensuring unparalleled accuracy in retrieving text from images. Whether you need to extract
+        text from scanned documents, photographs, or graphics, our OCR tool delivers exceptional results. Embrace the
+        convenience of converting images to editable and searchable text with ease.
+      </p>
+    </div>
+    <div class="para-img2">
+      <img src="https://www.nepalitrends.com/wp-content/uploads/2020/12/Image-to-text-converter-880x528.jpg" alt="">
+    </div>
+    </div>
+      <div class="main3">
+        <div class="para3">
+     <p class="left-align">No more manual data entry or transcription errors. Our image-to-text converter excels at recognizing text from
+        various image formats, including jpg and png files, and transforms them into editable text in the blink of an
+        eye. Unlock the power of OCR and experience the efficiency of automating the text extraction process.</p>
+      </div>
+      <div class="para-img3">
+        <img src="https://store-images.s-microsoft.com/image/apps.31355.13510798886736958.b103b59c-03ee-41d8-b773-1c83ef14dced.caa8f128-e37e-4ff8-8275-6ef4b60fed0f?w=120" alt="">
+      </div>
+      </div>
+      <div class="main4">
+        <div class="para4">
+      <p class="left-align">Make text extraction a breeze for your business, academics, or personal needs. Our user-friendly interface and
+        powerful OCR engine make it a top-notch choice for everyone. Enhance your productivity, save valuable time, and
+        ensure accurate text conversion with our reliable and feature-packed image-to-text converter.</p>
+      </div>
+      <div class="para-img4">
+        <img src="https://www.clatida.com/wp-content/uploads/2021/05/1_kMUgsKRq0rhkN4JD9HrmSw.png" alt="">
+      </div>
+      </div>
+      <!-- inme se koi bhi ek ya dono hisab se lga lio -->
+      <!-- <img src="https://www.reneelab.com/wp-content/uploads/sites/2/2021/05/text-from-png.png" alt=""> -->
+      <!-- <img src="https://www.nepalitrends.com/wp-content/uploads/2020/12/Image-to-text-converter-880x528.jpg" alt=""> -->
+      <br><br><br>
+    </section>
+    <section>
+      <p>
+        Discover the magic of our Image to Text converter and experience effortless text extraction from images. If
+        converting jpeg or png files to text seems daunting, fear not – our intuitive tool makes it a breeze. Just
+        follow these straightforward steps:
+      </p>
+      <!-- ye br tag hta dio aise hi lgaye h -->
+      <br><br><br>
+      <ul>
+        <li>Upload your image or simply drag and drop it into the converter.</li>
+        <br>
+        <li> With your image loaded, hit the "Submit" button to initiate the conversion process.</li>
+        <br>
+        <li>Voilà! The extracted text will be at your fingertips, ready to be copied to the clipboard or saved as a
+          document.</li>
+        <br>
+
+
+        <p>
+          Embrace the convenience and efficiency of our
+        <h5>Image to Text converter </h5> and bid farewell to the laborious manual typing. It's time to unlock the true
+        potential of your images with this user-friendly tool.
+        </p>
+
+      </ul>
+
+
+
+    </section>
+    <section class="feature-container">
+      <h1 class="heading">Features: effortless text extraction</h1>
+      <div class="features">
+        <div class="feature-box">
+          <h2>Title: Free Image to Text Converter - Extract Text Effortlessly!</h2>
+          <p>Easily extract text from images with our free, user-friendly image to text converter! No registration
+            required – it's totally hassle-free and cost-free. Capture text from JPEG or PNG files in seconds with our
+            advanced OCR tool. Copy the text or save it as a document. Try it now for extracting captions from your
+            favorite photos!</p>
         </div>
+        <div class="feature-box">
+          <h2>Title: AI-Based Text Extraction - Unparalleled Accuracy!</h2>
+          <p> Experience the power of AI-based text extraction with our cutting-edge tool! Developed by Hewlett-Packard
+            and backed by Google, our solution utilizes tesseract-ocr, an advanced open-source software. Say goodbye to
+            errors - achieve an astounding 100% accuracy in text extraction. Try it now and witness the future of
+            image-to-text technology!</p>
+        </div>
+        <div class="feature-box">
+          <h2>Title: Download Your Text Extract as a Convenient Text File!</h2>
+          <p>Once you've captured the text from your images, we offer you a seamless way to download it as a text file.
+            This downloadable file grants you the freedom to edit the extracted text as per your requirements.
+            Additionally, you can easily copy the text to your clipboard for effortless pasting into any other document.
+            Embrace the convenience of our image-to-text tool and streamline your workflow today!</p>
+        </div>
+        <div class="feature-box">
+          <h2>Title: A Versatile Image-to-Text Converter with Wide Format Support</h2>
+          <p>Our image-to-text converter offers exceptional versatility, supporting a plethora of image formats. No need
+            to fret about the image extension; our tool seamlessly handles various formats, ensuring a hassle-free
+            experience for you. Supported formats include:
+
+            JPG
+            JPEG
+            JPE
+            JFIF
+            JIF
+            JFI
+            BMP
+            PNG
+            TIFF
+            And that's not all; our dedicated team is continuously working to expand the list, promising even more
+            format support in the future. Enjoy the ease and convenience of extracting text from your favorite image
+            types effortlessly!
+
+
+
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-all" id="pricing-container">
+      <header>
+        <h1>Our Pricing</h1>
+        <div class="toggle">
+          <label>Annually </label>
+          <div class="toggle-btn">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label class="sub" id="sub" for="checkbox">
+              <div class="circle"></div>
+            </label>
+          </div>
+          <label> Monthly</label>
+        </div>
+      </header>
+      <div class="cards">
+        <div class="card shadow">
+          <ul>
+            <li class="pack">Basic</li>
+            <li id="basic" class="price bottom-bar">&dollar;39.99</li>
+            <li class="bottom-bar">500 GB Storage</li>
+            <li class="bottom-bar">2 Users Allowed</li>
+            <li class="bottom-bar">Send up to 3 GB</li>
+            <li><button class="btn">Learn More</button></li>
+          </ul>
+        </div>
+        <div class="card shadow">
+          <ul>
+            <li class="pack">Professional</li>
+            <li id="professional" class="price bottom-bar">&dollar;29.99</li>
+            <li class="bottom-bar">1 TB Storage</li>
+            <li class="bottom-bar">5 Users Allowed</li>
+            <li class="bottom-bar">Send up to 10 GB</li>
+            <li><button class="btn">Learn More</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <h1 class="h1">Frequently Asked Questions</h1>
+      <div class="faq-container">
         <div class="faq-box">
-          <h3 class="faq-title">How can I convert Jpg to Text?</h3>
-          <p class="faq-text">You can use a Jpg to word converter to convert JPG to Text. With just a single click, you can quickly convert images into text with great accuracy.</p>
+          <h3 class="faq-title">
+            How can I extract text from an image for free?
+          </h3>
+          <p class="faq-text">
+            To extract the text from an image, -> Go to imagetotext.info
+            (Free). -> Upload or drag and drop your image. -> Click the Submit
+            button. -> Copy the text or save the text file on your computer.
+          </p>
           <button class="faq-toggle">
             <i class="bx bx-chevron-down"></i>
             <i class="bx bx-x-circle"></i>
           </button>
         </div>
         <div class="faq-box">
-          <h3 class="faq-title">How do I convert scanned handwriting to text?</h3>
-          <p class="faq-text">To convert your scanned handwriting to text, upload your images into our Image to text converter tool and press the convert button. You can copy your notes in soft format or save as a document.</p>
+          <h3 class="faq-title">How can I convert Jpg to Text?</h3>
+          <p class="faq-text">
+            You can use a Jpg to word converter to convert JPG to Text. With
+            just a single click, you can quickly convert images into text with
+            great accuracy.
+          </p>
+          <button class="faq-toggle">
+            <i class="bx bx-chevron-down"></i>
+            <i class="bx bx-x-circle"></i>
+          </button>
+        </div>
+        <div class="faq-box">
+          <h3 class="faq-title">
+            How do I convert scanned handwriting to text?
+          </h3>
+          <p class="faq-text">
+            To convert your scanned handwriting to text, upload your images
+            into our Image to text converter tool and press the convert
+            button. You can copy your notes in soft format or save as a
+            document.
+          </p>
           <button class="faq-toggle">
             <i class="bx bx-chevron-down"></i>
             <i class="bx bx-x-circle"></i>
@@ -246,29 +458,54 @@
         </div>
         <div class="faq-box">
           <h3 class="faq-title">How Photo To Text Tools Works?</h3>
-          <p class="faq-text">Photo-to-text converters are online tools that convert a photo into text. It works by analyzing the pixels of the image and then converting them into words. The technology can be used to convert scanned documents into text or digital formats.</p>
+          <p class="faq-text">
+            Photo-to-text converters are online tools that convert a photo
+            into text. It works by analyzing the pixels of the image and then
+            converting them into words. The technology can be used to convert
+            scanned documents into text or digital formats.
+          </p>
           <button class="faq-toggle">
             <i class="bx bx-chevron-down"></i>
             <i class="bx bx-x-circle"></i>
           </button>
         </div>
-      <div class="faq-box">
-        <h3 class="faq-title">Why Do We Need To Extract Text From Images?</h3>
-        <p class="faq-text">Text extraction from images is crucial for creating accessible, searchable, editable, and shareable versions of the information contained in images. By using an image to text converter, we can easily get text from images and make the information more usable and valuable.</p>
-        <button class="faq-toggle">
-          <i class="bx bx-chevron-down"></i>
-          <i class="bx bx-x-circle"></i>
-        </button>
+        <div class="faq-box">
+          <h3 class="faq-title">
+            Why Do We Need To Extract Text From Images?
+          </h3>
+          <p class="faq-text">
+            Text extraction from images is crucial for creating accessible,
+            searchable, editable, and shareable versions of the information
+            contained in images. By using an image to text converter, we can
+            easily get text from images and make the information more usable
+            and valuable.
+          </p>
+          <button class="faq-toggle">
+            <i class="bx bx-chevron-down"></i>
+            <i class="bx bx-x-circle"></i>
+          </button>
+        </div>
       </div>
-    </div>
+
+    </section>
+
+    <!-- <center>
+      <div class="ad1" id="ad">
+        <h1>AD HERE</h1>
+      </div>
+    </center> -->
+  </main>
+
   </div>
-<!-- 
+  </div>
+  <!-- 
   <center>
     <div class="ad1" id="ad">
     <H1>AD HERE</H1>
     </div>
     </center> -->
-  
+
+
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -311,8 +548,8 @@
         </div>
       </div>
     </div>
- </footer>
-<script src="index.js"></script>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
