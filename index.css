@@ -7,6 +7,26 @@
     font-size: 15px;
   
   }
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:rgb(59 130 246 / 0.5); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(31, 68, 129, 0.5);; 
+  }
   
   body {
     background: #f7f7ff;
@@ -106,7 +126,7 @@ form {
   .js .input-file-trigger {
     display: block;
     padding: 13px 36px;
-    background: rgb(59 130 246 / 0.5);;
+    background: rgb(59 130 246 / 0.5);
     color: #fff;
     font-size: 1em;
     transition: all .4s;
@@ -164,6 +184,8 @@ form {
   height: auto;
   width: auto;
   position: relative;
+  top: 0;
+  scroll-behavior: smooth;
 }
 #premium-div >h2{
  position: absolute;
@@ -226,9 +248,8 @@ form {
       /* background-color: rgb(85, 86, 90); */
       box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
     }
-    .main-ben{
-      display: flex;
-      flex-flow: column;
+    .main-ben img{
+      height: auto;
       width: auto;
       
     }
@@ -413,7 +434,6 @@ form {
   }
 .feature-box{
   padding: 1rem;
-  border: 1.5px solid navy;
   background: #ffffff;
   border-radius: 20px;
   /* text-align:left; */
@@ -603,52 +623,58 @@ form {
     background-color: #ffffff;
   }
   .result{
-    width: auto;
+    width: 55vw;
     display: flex;
+    height: 30vw;
+    overflow-y: scroll;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     box-shadow: rgba(80, 68, 146, 0.153) 0px 48px 80px 0px;
-    border-radius: 20px;
+    border-radius: 5px;
     margin: 2%;
+    text-align: left;
     padding: 5%;
-    text-align: center;
-    visibility: hidden;
+    visibility: visible;
   }
 
   .buttons{
 
     display: grid;
+    grid-gap: 20px;
     box-shadow: rgba(80, 68, 146, 0.153) 0px 48px 80px 0px;
     margin: 1%;
+    width: 55vw;
   }
   .download{
+    grid-column: 1/span1;
     grid-row: 1;
     border-radius: 10px;
     padding: 1%;
-    width: 45vw;
+
     background-color: rgb(182, 210, 255);
     margin: 2%;
     transition: 0.5s ease-out;
     
   }
   .copy{
+    grid-column: 2/span 1;
     grid-row: 1;
     border-radius: 10px;
-    padding: 1%;
-    width: 45vw;
+    padding: 20px;
+
     margin: 2%;
     background-color: rgb(182, 210, 255);
     transition: 0.5s ease-out;
   }
   .searchweb{
-    grid-column: 1 / span 3;
-    grid-row: 3;
+    grid-column: 1 / span 2;
+    grid-row: 2;
     margin: 2%;
     background-color: rgb(182, 210, 255);
     transition: 0.5s ease-out;
     width: auto;
     border-radius: 10px;
-    padding: 1%;
+    padding: 20px;
   }
   .searchweb:hover{
     transform: scale(1..03);
@@ -797,6 +823,15 @@ form {
       grid-column: 1 / span 1;
       grid-row: 1;
     }
+    .buttons{
+      width: 92vw;
+    }
+    .result{
+      width: 92vw;
+      height: 60vw;
+      font-size: 1rem;
+    }
+
     .para-img1{
       grid-column: 1 / span 1;
       grid-row: 2;
